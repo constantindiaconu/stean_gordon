@@ -1,1 +1,124 @@
 
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mâncăruri Preferate</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff7043;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .food-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .food-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .food-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .food-info {
+      padding: 15px;
+    }
+
+    .food-info h3 {
+      margin-top: 0;
+      color: #ff7043;
+    }
+
+    .food-info p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mâncărurile Mele Preferate</h1>
+    <p>O colecție delicioasă de preparate pe care le ador!</p>
+  </header>
+
+  <section class="food-container">
+    <div class="food-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sarmale_1.jpg/640px-Sarmale_1.jpg" alt="Sarmale">
+      <div class="food-info">
+        <h3>Sarmale</h3>
+        <p>Sarmalele sunt un preparat tradițional românesc, gătit cu foi de varză și umplutură de carne și orez.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Mamaliga.jpg" alt="Mămăligă cu brânză și smântână">
+      <div class="food-info">
+        <h3>Mămăligă cu brânză</h3>
+        <p>O combinație simplă și gustoasă de mămăligă caldă, brânză de burduf și smântână.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Mici.jpg" alt="Mici la grătar">
+      <div class="food-info">
+        <h3>Mici</h3>
+        <p>Mici suculenți, copți pe grătar, serviti de obicei cu muștar și pâine.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Ciorba_de_burta.jpg" alt="Ciorbă de burtă">
+      <div class="food-info">
+        <h3>Ciorbă de burtă</h3>
+        <p>O ciorbă savuroasă și cremoasă, servită cu smântână, oțet și ardei iute.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mâncărurile lui Ștefan. Toate drepturile rezervate.
+  </footer>
+
+</body>
+</html>
